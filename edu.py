@@ -109,18 +109,40 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.devtools.v134.dom import get_attributes
 
-driver = webdriver.Chrome()
-driver.get("https://cinematica.kg/")
-time.sleep(3)
-elements = driver.find_elements(By.XPATH, "//a[@class='movie-dummy']")
-for element in elements:
-    source = element.get_attribute("href")
-    title = element.find_element(By.XPATH, ".//div[@class='movie-title']").text
-    image = element.find_element(By.XPATH, ".//img").get_attribute("src")
+# driver = webdriver.Chrome()
+# driver.get("https://cinematica.kg/")
+# time.sleep(3)
+# elements = driver.find_elements(By.XPATH, "//a[@class='movie-dummy']")
+# for element in elements:
+#     source = element.get_attribute("href")
+#     title = element.find_element(By.XPATH, ".//div[@class='movie-title']").text
+#     image = element.find_element(By.XPATH, ".//img").get_attribute("src")
+#
+#     print("link to the movie", source)
+#     print(title)
+#     print(image)
+#     print("----"*20)
+#
+# driver.quit()
 
-    print("link to the movie", source)
-    print(title)
-    print(image)
-    print("----"*20)
+# class MyMyclass:
+#
+#     @staticmethod
+#     def hello():
+#         print("Hello")
+#
 
-driver.quit()
+
+# class MyMath:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#
+#     @staticmethod
+#     def add(a, b):
+#         return a + b
+#
+#
+# a = MyMath(1, 2)
+#
+# print(MyMath.add(1, 2))
